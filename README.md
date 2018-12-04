@@ -7,3 +7,5 @@ My implementation is heavily based on Keras own Adam implementation which can be
 
 A Colab Notebook using the same code can be found here:
 https://colab.research.google.com/drive/1xXh2xJdGjrcZ4XjUXWaSQ2osBR09UBG6
+
+Thanks to the authors of the paper for their contribution.
