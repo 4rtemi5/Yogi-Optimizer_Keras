@@ -1,11 +1,16 @@
-import tensorflow as tf
 from tensorflow.python.ops import state_ops
 from tensorflow.python.ops import math_ops
 from tensorflow.python.util.tf_export import tf_export
-from tensorflow.keras import backend as K
 
+# if you use tf.keras:
+from tensorflow.keras import backend as K  
+from tensorflow.keras.optimizers import Optimizer
+
+# if you use standalone Keras
+# from keras import backend as K
+# from keras.optimizers import Optimizer
     
-class Yogi(tf.keras.optimizers.Optimizer):
+class Yogi(Optimizer):
     """Yogi optimizer.
     Default parameters follow those provided in the original paper.
     Arguments:
